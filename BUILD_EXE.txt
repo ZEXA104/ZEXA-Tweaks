@@ -1,0 +1,12 @@
+AUTOMATICKÉ VYTVOŘENÍ EXE PŘES GITHUB
+
+1. Vytvoř si GitHub repository.
+2. Nahraj celý obsah této složky do repository.
+3. Otevři záložku Actions.
+4. Vyber "Build ZEXA Tweaks".
+5. Klikni "Run workflow".
+6. Po dokončení otevři hotový run a v části Artifacts stáhni "ZEXA_Tweaks".
+7. Uvnitř bude ZEXA_Tweaks.exe.
+
+Lokálně (pokud máš .NET 8 SDK):
+dotnet publish ZEXA_Tweaks.csproj -c Release -r win-x64 --self-contained true /p:PublishSingleFile=true
